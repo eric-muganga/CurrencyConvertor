@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -36,7 +36,7 @@ namespace CurrencyConvertor
 
         private async void GetValue()
         {
-            val = await GetData<Root>("https://openexchangerates.org/api/latest.json?app_id=0967e237d09142ea9a9d6292c3ad01bb");
+            val = await GetData<Root>("https://openexchangerates.org/api/latest.json?app_id=0967e237d09142ea9a9d6292c3ad01as");
             BindCurrency();
         }
         public async Task<Root> GetData<T>(string url)
